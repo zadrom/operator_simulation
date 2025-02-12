@@ -1,5 +1,5 @@
 import streamlit as st
-import plotly.graph_objects as go
+import matplotlib.pyplot as plt
 import networkx as nx
 
 # Funkcija za crtanje mreže
