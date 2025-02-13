@@ -46,7 +46,7 @@ def prikazi_pitanje(pitanje, odgovori, tocni_odgovor):
     st.image(kreiraj_shemu())
     st.write("### " + pitanje)
     izbor = st.radio("Odaberite točan odgovor:", odgovori)
-    if st.button("Potvrdi odgovor"):
+    if st.button("Potvrdi odgovor", key=f"button_{pitanje}"):
         if izbor == tocni_odgovor:
             st.success("✔ Točno! Idemo dalje.")
             return True
@@ -79,6 +79,3 @@ def simulacija():
 if __name__ == "__main__":
     st.title("Simulacija Operatora Elektrodistribucije")
     simulacija()
-
-
-
