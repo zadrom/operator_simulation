@@ -1,1 +1,3 @@
-streamlit
+networkx==3.1
+matplotlib==3.7.1
+streamlit==1.30.0
